@@ -1,0 +1,17 @@
+name = "AutoIntegration"
+uuid = "40fd747d-4b08-4b8c-98c4-74a2b6295b1b"
+version = "0.1.0"
+authors = []
+
+[deps]
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[compat]
+TOML = "1"
+julia = "1.12"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
