@@ -10,6 +10,19 @@ or a backend for a framework, is an *integration*. AutoIntegration lets a user
 install integrations as ordinary packages, by name, and then choose for each one
 whether it loads by itself or only when a `using` line names it.
 
+## Install
+
+AutoIntegration is in the registry
+[`ProjecturedRegistry`](https://github.com/projectured/ProjecturedRegistry), not in
+the General registry. Add both registries once; if General is there already, its
+line does nothing:
+
+```
+pkg> registry add General
+pkg> registry add https://github.com/projectured/ProjecturedRegistry
+pkg> add AutoIntegration
+```
+
 ## Why
 
 Julia has two ways to ship an integration, and each one fails a user:
@@ -142,4 +155,4 @@ backend declares the trigger `Projectured`, and each integration declares
 
 ## Licence
 
-MIT, in `LICENSE`.
+MIT, in [`LICENSE`](LICENSE).
