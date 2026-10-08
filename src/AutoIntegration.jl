@@ -251,6 +251,9 @@ function _run_after_load(::Base.PkgId)
     nothing
 end
 
+# Each session runs the callback after its first load, so the image holds its code.
+precompile(_run_after_load, (Base.PkgId,))
+
 function __init__()
     ccall(:jl_generating_output, Cint, ()) == 1 && return nothing
     push!(Base.package_callbacks, _run_after_load)

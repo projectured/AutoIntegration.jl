@@ -1,6 +1,6 @@
 name = "AutoIntegration"
 uuid = "40fd747d-4b08-4b8c-98c4-74a2b6295b1b"
-version = "0.1.0"
+version = "0.1.1"
 authors = []
 
 [deps]
